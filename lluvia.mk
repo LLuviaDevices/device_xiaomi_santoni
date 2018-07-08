@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017 The LLuviaOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
-# Inherit some common AICP stuff.
+# Inherit some common LLuviaOS stuff.
 $(call inherit-product, vendor/lluvia/config/common_full_phone.mk)
 
 TARGET_VENDOR := Xiaomi
@@ -33,12 +33,4 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="santoni-user 7.1.2 N2G47H V9.5.4.0.NAMMIFA release-keys"
-
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := Xiaomi/santoni/santoni:7.1.2/N2G47H/V9.5.4.0.NAMMIFA:user/release-keys
-
-# AICP Device Maintainers
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Jyotiraditya Panda"
+TARGET_VENDOR_PRODUCT_NAME := santoni
