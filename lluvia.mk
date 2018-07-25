@@ -22,11 +22,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
 # Inherit some common AICP stuff.
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lluvia/config/common_full_phone.mk)
+$(call inherit-product, vendor/lluvia/config/caf_fw.mk)
 
 TARGET_VENDOR := Xiaomi
 PRODUCT_DEVICE := santoni
-PRODUCT_NAME := aicp_santoni
+PRODUCT_NAME := lluvia_santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
 PRODUCT_MANUFACTURER := Xiaomi
@@ -41,10 +42,4 @@ BUILD_FINGERPRINT := Xiaomi/santoni/santoni:7.1.2/N2G47H/V9.5.4.0.NAMMIFA:user/r
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Hemant Sharma (hemantbeast)"
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
--include vendor/aicp/configs/bootanimation.mk
-
+    DEVICE_MAINTAINERS="Jyotiraditya Panda"
