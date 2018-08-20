@@ -23,7 +23,6 @@ $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/lluvia/config/common_full_phone.mk)
-$(call inherit-product, vendor/lluvia/config/caf_fw.mk)
 
 TARGET_VENDOR := Xiaomi
 PRODUCT_DEVICE := santoni
