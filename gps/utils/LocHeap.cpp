@@ -26,7 +26,7 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-#include <LocHeap.h>
+#include "LocHeap.h"
 
 class LocHeapNode {
     friend class LocHeap;

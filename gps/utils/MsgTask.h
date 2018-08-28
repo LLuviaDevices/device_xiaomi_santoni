@@ -29,7 +29,7 @@
 #ifndef __MSG_TASK__
 #define __MSG_TASK__
 
-#include <LocThread.h>
+#include "LocThread.h"
 
 struct LocMsg {
     inline LocMsg() {}

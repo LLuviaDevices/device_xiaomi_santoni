@@ -34,11 +34,11 @@
 #include <loc_timer.h>
 #include <sys/timerfd.h>
 #include <sys/epoll.h>
-#include <LocTimer.h>
-#include <LocHeap.h>
-#include <LocThread.h>
-#include <LocSharedLock.h>
-#include <MsgTask.h>
+#include "LocTimer.h"
+#include "LocHeap.h"
+#include "LocThread.h"
+#include "LocSharedLock.h"
+#include "MsgTask.h"
 
 #ifdef __HOST_UNIT_TEST__
 #define EPOLLWAKEUP 0

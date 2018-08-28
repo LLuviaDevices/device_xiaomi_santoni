@@ -30,7 +30,7 @@
 #define LOG_TAG "LocSvc_MsgTask"
 
 #include <unistd.h>
-#include <MsgTask.h>
+#include "MsgTask.h"
 #include <msg_q.h>
 #include <loc_log.h>
 #include <platform_lib_includes.h>

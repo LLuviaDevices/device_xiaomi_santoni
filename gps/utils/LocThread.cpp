@@ -26,7 +26,7 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-#include <LocThread.h>
+#include "LocThread.h"
 #include <string.h>
 #include <pthread.h>
 #include <platform_lib_macros.h>

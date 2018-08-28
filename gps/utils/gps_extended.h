@@ -34,7 +34,7 @@
  * @brief C++ declarations for GPS types
  */
 
-#include <gps_extended_c.h>
+#include "gps_extended_c.h"
 #if defined(USE_GLIB) || defined(OFF_TARGET)
 #include <string.h>
 #endif
